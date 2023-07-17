@@ -1,0 +1,31 @@
+---
+title: "Weekly Summaries"
+author: "Joshua Fowler"
+format: html
+editor: visual
+date-modified: "`r Sys.Date()`"
+number_sections: true
+---
+
+```{r setup}
+#| echo: false
+#| output: false
+library(knitr)
+library(tidyverse)
+
+
+start_date <-  as.Date("2023-07-16")
+elapsed_weeks <- difftime(Sys.Date()+16,start_date, unit = "weeks")
+```
+
+```{r weekly_count}
+#| echo: false
+cat(paste("This document spans", floor(elapsed_weeks), "weeks from", start_date, "to", Sys.Date()))
+# Sys.Date()-as.numeric(opts_current$get()$label)
+# print(opts_current$get()$label)
+```
+
+## July 7, 2023 to July 16, 2023
+
+# test
+
